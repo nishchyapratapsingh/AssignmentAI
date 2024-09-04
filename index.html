@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Upload Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            flex-direction: column;
+        }
+
+        .container {
+            text-align: center;
+            animation: fadeIn 2s ease-in-out; /* Animation for container */
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            animation: slideIn 1.5s ease-in-out; /* Animation for header */
+        }
+
+        .upload-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            animation: fadeIn 3s ease-in-out; /* Animation for buttons */
+            margin-bottom: 2rem;
+        }
+
+        .upload-button {
+            display: flex;
+            align-items: center;
+            background-color: #f0f0f0; /* Light grey button */
+            color: #000; /* Black text */
+            padding: 15px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2rem;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .upload-button:hover {
+            background-color: #e0e0e0; /* Darker grey on hover */
+            transform: translateY(-5px); /* Lift button on hover */
+        }
+
+        .upload-button img {
+            margin-right: 10px;
+            height: 30px;
+            width: auto;
+        }
+
+        .text-query-box {
+            background-color: #f0f0f0; /* Light grey background */
+            color: #000; /* Black text */
+            padding: 20px;
+            border-radius: 15px;
+            width: 92%;
+            max-width: 100vw;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+            animation: fadeIn 4s ease-in-out; /* Animation for text query box */
+        }
+
+        .text-query-box textarea {
+            width: 90%;
+            height: 90px;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+        }
+
+        .text-query-box button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            background-color: #000; /* Black button */
+            color: #fff; /* White text */
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .text-query-box button:hover {
+            background-color: #333; /* Darker black on hover */
+            transform: translateY(-5px); /* Lift button on hover */
+        }
+
+        /* Keyframes for animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Upload your Assignments</h1>
+    <div class="upload-buttons">
+        <a href="#" class="upload-button">
+            <img src="https://img.icons8.com/color/48/000000/pdf-2.png" alt="PDF Icon">
+            PDF Files
+        </a>
+        <a href="#" class="upload-button">
+            <img src="https://img.icons8.com/color/48/000000/image-file.png" alt="JPG Icon">
+            Images
+        </a>
+    </div>
+    <div class="text-query-box">
+        <textarea placeholder="or type your queries right away..."></textarea>
+        <button>Submit Query</button>
+    </div>
+</div>
+
+</body>
+</html>
