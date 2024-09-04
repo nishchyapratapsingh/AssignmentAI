@@ -18,7 +18,7 @@ app.post('/ask', async (req, res) => {
   try {
     const chatCompletion = await openai.chat.completions.create({
       model: 'mistralai/Mistral-7B-Instruct-v0.2',
-      messages: [{ role: 'assignment helper', content: userInput }],
+      messages: [{ role: 'user', content: userInput }],
     });
     const aiResponse = chatCompletion.choices[0]?.message?.content || "No response generated.";
     res.json({ reply: aiResponse });
