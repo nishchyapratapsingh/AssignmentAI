@@ -57,7 +57,7 @@ Open index.html to access the application.
 
 ## Limitations
 
-# API restrictions
+### API restrictions
 1. The api used for generating AI responses restricts response length and number of uses.
 2. PDF files with maximum of 3 pages are accepted.
 
