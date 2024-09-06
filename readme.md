@@ -1,5 +1,3 @@
----
-
 # Assignment AI
 
 Assignment AI is a project that allows students to upload assignments in PDF and image formats, using OCR (Optical Character Recognition) to extract text, and sends the extracted text to an AI model to generate responses. The project provides real-time solutions for assignment-related queries through an intuitive web interface.
@@ -57,7 +55,7 @@ Open index.html to access the application.
 2. **Get AI Assistance**: The system will extract the text from the uploaded assignment and send it to the AI for assistance.
 3. **Text Query**: Use the text query box for direct questions related to your assignment, without uploading a file.
 
-##Limitations
+## Limitations
 
 **API restrictions**: The api used for generating AI responses restricts response length and number of uses.
 
