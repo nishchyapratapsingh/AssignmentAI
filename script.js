@@ -25,12 +25,13 @@ document.addEventListener('DOMContentLoaded', () => {
     async function uploadFile(file) {
         const formData = new FormData();
         formData.append('file', file);
+        formData.append('OCREngine', '2'); 
 
         try {
             const response = await fetch('https://api.ocr.space/parse/image', {
                 method: 'POST',
                 headers: {
-                    'apikey': 'K83492206988957' // Replace with your actual API key
+                    'apikey': 'K83492206988957', // Replace with your actual API key
                 },
                 body: formData
             });
