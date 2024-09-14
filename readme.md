@@ -45,7 +45,7 @@ The server will run on `http://localhost:3000`.
 
 ### 4. Run index.html
 
-Open index.html to access the application.
+Open index.html in your browser to access the application.
 
 ### 5. It is recommended to generate and use your own api keys
 
